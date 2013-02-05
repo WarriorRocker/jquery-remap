@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>jQuery - Remap</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.remap.js"></script>
+	<script type="text/javascript">
+	$(function() {
+		$('img').remap();
+		$('area').click(function(e) {
+			alert($(this).attr('alt'));
+			e.preventDefault();
+		});
+	});
+	</script>
+</head>
+<body style="margin: 0px;">
+	<img src="periodic.png" usemap="#image-map" style="width: 100%;" />
+	<map name="image-map">
+		<area shape="rect" coords="142,102,230,193" href="#" alt="Hydrogen">
+		<area shape="rect" coords="1691,104,1779,191" href="#" alt="Helium">
+		<area shape="rect" coords="144,198,230,284" href="#" alt="Lithium">
+		<area shape="rect" coords="235,195,322,284" href="#" alt="Beryllium">
+		<area shape="rect" coords="1233,196,1323,281" href="#" alt="Boron">
+		<area shape="rect" coords="1326,195,1413,282" href="#" alt="Carbon">
+		<area shape="rect" coords="1417,196,1505,281" href="#" alt="Nitrogen">
+		<area shape="rect" coords="1507,195,1595,284" href="#" alt="Oxygen">
+		<area shape="rect" coords="1599,195,1687,282" href="#" alt="Flourine">
+		<area shape="rect" coords="1690,196,1777,283" href="#" alt="Neon">
+	</map>
+</body>
+</html>
