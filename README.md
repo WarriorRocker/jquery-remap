@@ -1,4 +1,4 @@
-jquery-remap
+[jquery-remap](http://www.xodustech.com/development/jquery-remap)
 ============
 
 jQuery responsive design or dynamic size image map remaping plugin
